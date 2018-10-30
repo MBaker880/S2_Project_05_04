@@ -15,7 +15,7 @@
 */
 
 html {
-    background-color: rgb(116, 92, 61);
+    background-color: rgb(138, 114, 83);
 }
 
 body {
@@ -44,15 +44,20 @@ nav.horizontal ul {
 nav.horizontal ul li {
     list-style-type: none;
     display: table-cell;
+    padding: 20px;
+    background-color: rgb(116, 92, 61);
 }
 
-/* nav.horizontal ul{
-    display: block;
-    list-style-type: none;
-    text-align: center;
-    line-height: 30px;
-    height: 30px;
-} */
+nav.horizontal a:link,
+nav.horizontal a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+nav.horizontal a:hover,
+nav.horizontal a:active {
+    color: beige;
+}
 
 .horizontal::after {
     clear: both;
