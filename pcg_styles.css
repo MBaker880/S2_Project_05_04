@@ -14,10 +14,12 @@
 
 */
 
+/* Html Styles */
 html {
     background-color: rgb(138, 114, 83);
 }
 
+/* Body Styles */
 body {
     background-color: aliceblue;
     margin-left: auto;
@@ -32,6 +34,7 @@ body header img {
     width: 100%;
 }
 
+/* Navigational Styles */
 nav.horizontal {
     display: table;
     width: 100%;
@@ -65,3 +68,19 @@ nav.horizontal a:active {
     display: table;
 }
 
+/* Div Styles */
+div.col-1-4 {
+    width: 25%;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+
+}
+
+/* Address Styles */
+address {
+    text-align: center;
+}
