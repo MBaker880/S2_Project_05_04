@@ -16,7 +16,7 @@
 
 /* Html Styles */
 html {
-    background-color: rgb(138, 114, 83);
+    background-color: rgb(104, 87, 65);
 }
 
 /* Body Styles */
@@ -48,7 +48,7 @@ nav.horizontal ul li {
     list-style-type: none;
     display: table-cell;
     padding: 20px;
-    background-color: rgb(116, 92, 61);
+    background-color: rgb(61, 51, 37);
 }
 
 nav.horizontal a:link,
@@ -69,18 +69,73 @@ nav.horizontal a:active {
 }
 
 /* Div Styles */
-div.col-1-4 {
-    width: 25%;
-    padding: 20px 10px;
-    text-align: center;
+div.col-1-2left {
+    position: relative;
+    width: 45%;
+    padding: 10px 20px;
+    float: left;
+}
+
+.col-1-2left::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+div.col-1-2right {
+    position: relative;
+    width: 45%;
+    padding: 10px 20px;
+    float: right;
+}
+
+.col-1-2right::after {
+    clear: both;
+    content: "";
+    display: table;
 }
 
 /* Footer Styles */
 footer {
-
+    background-color: rgb(151, 121, 82);
 }
 
+nav.footerNav ul li {
+    list-style-type: none;
+    display: block;
+}
+
+body > footer > nav.footerNav {
+	float: left;
+	width: 25%;	
+}
+
+.footerNav::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+nav.footerNav a:link,
+nav.footerNav a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+nav.footerNav a:hover,
+nav.footerNav a:active {
+    color: beige;
+}
 /* Address Styles */
 address {
     text-align: center;
+    background-color: rgb(61, 51, 37);
+    padding: 20px;
+    color: white;
+}
+
+::after {
+    clear: both;
+    content: "";
+    display: table;
 }
