@@ -15,11 +15,13 @@
 */
 
 /* Html Styles */
+/* Changes color of the html background. */
 html {
     background-color: rgb(104, 87, 65);
 }
 
 /* Body Styles */
+/* Sets parameters for body while also laying out the background color. */
 body {
     background-color: aliceblue;
     margin-left: auto;
@@ -29,21 +31,25 @@ body {
     width: 95%;
 }
 
+/* Defines images width as 100% in the header. */
 body header img {
     display: block;
     width: 100%;
 }
 
 /* Navigational Styles */
+/* Gives the horizontal nav a width of 100%. */
 nav.horizontal {
     display: table;
     width: 100%;
 }
 
+/* Sets to display as a table row. */
 nav.horizontal ul {
     display: table-row;
 }
 
+/* Gives padding and sets a color scheme to the horizontal navigations li's. */
 nav.horizontal ul li {
     list-style-type: none;
     display: table-cell;
@@ -51,17 +57,20 @@ nav.horizontal ul li {
     background-color: rgb(61, 51, 37);
 }
 
+/* Changes the style of the text color to white after it has been visited ans while it is on the page. */
 nav.horizontal a:link,
 nav.horizontal a:visited {
     text-decoration: none;
     color: white;
 }
 
+/* Changes color when mouse is hovered over the link or the link is active.  */
 nav.horizontal a:hover,
 nav.horizontal a:active {
     color: beige;
 }
 
+/* Container collapse rule. */
 .horizontal::after {
     clear: both;
     content: "";
@@ -69,6 +78,7 @@ nav.horizontal a:active {
 }
 
 /* Div Styles */
+/* Positions this div column to the left. */
 div.col-1-2left {
     position: relative;
     width: 45%;
@@ -76,12 +86,14 @@ div.col-1-2left {
     float: left;
 }
 
+/* Container collapse rule. */
 .col-1-2left::after {
     clear: both;
     content: "";
     display: table;
 }
 
+/* Floats the column to the left. */
 div.col-1-2right {
     position: relative;
     width: 45%;
@@ -89,6 +101,7 @@ div.col-1-2right {
     float: right;
 }
 
+/* Container collapse rule. */
 .col-1-2right::after {
     clear: both;
     content: "";
@@ -96,37 +109,44 @@ div.col-1-2right {
 }
 
 /* Footer Styles */
+/* Changes the footer's color to something other than the ones assigned to other elements. */
 footer {
     background-color: rgb(151, 121, 82);
 }
 
+/* Gets rid of all underlining styles place on the nav links. */
 nav.footerNav ul li {
     list-style-type: none;
     display: block;
 }
 
+/* Floats element left with a width of 25%. */
 body > footer > nav.footerNav {
 	float: left;
-	width: 25%;	
+    width: 25%;	
 }
 
+/* Container collapse rule. */
 .footerNav::after {
     clear: both;
     content: "";
     display: table;
 }
 
+/* Removes any style rules from a tags and colrs the text black. */
 nav.footerNav a:link,
 nav.footerNav a:visited {
     text-decoration: none;
     color: black;
 }
 
+/* Color of a tags when hovered over becomes baige. */
 nav.footerNav a:hover,
 nav.footerNav a:active {
     color: beige;
 }
 /* Address Styles */
+/* Aligns text to the center while creating a padding of 20px on each side. */
 address {
     text-align: center;
     background-color: rgb(61, 51, 37);
@@ -134,6 +154,7 @@ address {
     color: white;
 }
 
+/* Container collapse rule. */
 ::after {
     clear: both;
     content: "";
